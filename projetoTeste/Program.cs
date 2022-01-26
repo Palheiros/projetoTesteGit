@@ -15,6 +15,8 @@ namespace projetoTeste
             Console.WriteLine();
             int dias = idade * 365;
             Console.WriteLine(nome + ", você já viveu aproximadamente " + dias + " dias!");
+            Console.WriteLine();
+            Console.WriteLine("Tenha um bom dia!");
 
         }
     }
