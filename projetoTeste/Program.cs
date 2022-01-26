@@ -27,9 +27,15 @@ namespace projetoTeste
             {
                 Console.WriteLine("Maior de idade. Pode prosseguir com o login.");
             }
-            
-            Console.WriteLine();
-            Console.WriteLine("Tenha um bom dia!");
+
+            DateTime tempo = DateTime.Now;
+
+            if (tempo.Hour > 6 && tempo.Hour < 12)
+                Console.WriteLine($"Bom dia, {nome}!");
+            else if (tempo.Hour >= 12 && tempo.Hour < 18)
+                Console.WriteLine($"Boa tarde, {nome}!");
+            else
+                Console.WriteLine($"Boa noite, {nome}!");
 
         }
     }
